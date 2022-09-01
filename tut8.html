@@ -13,15 +13,18 @@ web learrning codes
 <body>
     <h2>This is HTML forms</h2>
     <form action="backend.php">
-        Name <input type="text" name="MyName">
+        <label for="name">Name</label>
+         <input type="text" name="MyName" id="name">
         <br>
         <br>
         <div>
-            Role <input type="text" name="MyRole">
+            <label for="role">Role</label>
+             <input type="text" name="MyRole" id="role">
         </div>
         <!-- br is not recomeded --> <br>
         <div>
-            age <input type="email" name="MyEmail">
+            <label for="age">age</label>
+             <input type="email" name="MyEmail" id="age">
         </div>
         <br>
         <div>
@@ -33,7 +36,7 @@ web learrning codes
         </div>
         <br>
         <div>
-            Are you Eligible? <input type="checkbox">
+            Are you Eligible? <input type="checkbox" checked> 
         </div>
         <br>
         <div>
@@ -43,7 +46,17 @@ web learrning codes
         <div>
             Write about yourself <br><textarea name="MyText" id="" cols="30" rows="10"></textarea>
         </div>
+        <br>
 
+        <div>
+            <label for="car">Car</label>
+            <select name="Mycar" id="car">
+                <option value="ind">indica</option>
+                <option value="swf">Swift</option>
+                <option value="nexon">Nexon</option>
+            </select>
+        </div>
+        
         
 
     </form>
